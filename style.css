@@ -1,0 +1,121 @@
+:root {
+  --bg-color: #ffe4ec;        /* baby pink */
+  --text-color: #222;
+  --button-color: #f8bfcf;
+  --button-text: #222;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 100px;
+  transition: all 0.3s ease;
+}
+
+#timer {
+  font-size: 48px;
+  margin: 20px;
+}
+
+button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Theme */
+body.dark {
+  --bg-color: #4b001a;        /* dark maroon pink */
+  --text-color: #fff;
+  --button-color: #7a0034;
+  --button-text: #fff;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin-top: 100px;
+}
+#timer {
+  font-size: 48px;
+  margin: 20px;
+}
+button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px 20px;
+}
+#timer-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 240px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+#timer-widget h3 {
+  margin-top: 0;
+}
+
+#timer-widget select,
+#timer-widget button {
+  margin: 5px 3px;
+}
+
+#widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid #aaa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 10000;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+
+#widget-header {
+  padding: 10px;
+  background-color: var(--button-color);
+  color: var(--button-text);
+  cursor: move;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#widget-body {
+  padding: 10px;
+}
+
+#minimize-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  margin: 4px;
+}

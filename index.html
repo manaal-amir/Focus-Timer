@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="widget-container">
+  <div id="widget-header">
+    ⏳ Focus Timer
+    <button id="minimize-btn">➖</button>
+  </div>
+  <div id="widget-body">
+    <label for="time-select">⏱️ Time:</label>
+    <select id="time-select" onchange="setTimerFromDropdown()">
+      <option value="15">15 min</option>
+      <option value="25" selected>25 min</option>
+      <option value="45">45 min</option>
+    </select>
+    <div id="timer">25:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <button onclick="toggleMode()" id="mode-toggle">🌙</button>
+  </div>
+</div>
+
+
+<body>
+  <h1>⏳ Focus Timer</h1>
+  <label for="time-select">⏱️ Choose focus time:</label>
+  <select id="time-select" onchange="setTimerFromDropdown()">
+    <option value="15">15 minutes</option>
+    <option value="25" selected>25 minutes</option>
+    <option value="45">45 minutes</option>
+  </select>
+  <button onclick="toggleMode()" id="mode-toggle">🌙 Dark Mode</button>
+  <div id="timer">25:00</div>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="pauseTimer()">Pause</button>
+  <button onclick="resetTimer()">Reset</button>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
